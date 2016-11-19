@@ -1,0 +1,10 @@
+     QObject::connect(&quit, SIGNAL(clicked()), &app, SLOT(quit()));
+
+QObject::connect() is perhaps the most central feature of Qt. Note that connect() is a static function in QObject. Do not confuse it with the connect() function in the Berkeley socket library.
+
+This connect() call establishes a one-way connection between two Qt objects (objects that inherit QObject, directly or indirectly). Every Qt object can have both signals (to send messages) and slots (to receive messages). All widgets are Qt objects, since they inherit QWidget, which in turn inherits QObject.
+
+Here, the clicked() signal of quit is connected to the quit() slot of app, so that when the button is clicked, the application quits.
+
+The Signals and Slots documentation describes this topic in detail.
+http://doc.trolltech.com/4.3/signalsandslots.html

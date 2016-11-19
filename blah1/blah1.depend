@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1283872680 source:/home/jacob/c++/TicketOrder.cpp
+	<iostream>
+	<iomanip>
+	<vector>
+	"TicketOrder.h"
+
+1283867523 /home/jacob/c++/TicketOrder.h
+
+1283872612 source:/home/jacob/c++/main.cpp
+	<iostream>
+	<vector>
+	<iomanip>
+	"TicketOrder.h"
+
